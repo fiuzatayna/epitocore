@@ -13,7 +13,7 @@ Clone this repository:
 ```console
 git clone https://github.com/fiuzatayna/epitocore
 cd epitocore
-docker etc etc copiar comando certinho
+docker build -t epitocore .
 ```
 
 **Running an EpitoCore analysis**
@@ -21,7 +21,7 @@ docker etc etc copiar comando certinho
 1. Enter the epitocore container:
 
 ```console
-docker etc etc
+docker run -it epitocore /bin/bash
 ```
 
 You can open another terminal inside this same container using your running container id. 
@@ -55,7 +55,7 @@ The script will run each part of the code in sections until the IEDB immuno pred
 Afterwards it will open a configuration_file file used by the R analysis and user must include
 
 - [ ] IEDB consensus percentile rank thresholds
-- [ ] Minimal number of strains in which a candidate peptide must be found.
+- [ ] Minimal number of strains in which a candidate peptide must be found
 
 **Additional**
 
