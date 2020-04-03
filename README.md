@@ -21,7 +21,7 @@ docker build -t epitocore .
 1. Enter the epitocore container:
 
 ```console
-docker run -it epitocore /bin/bash
+docker run -v Output:/home/Output -it epitocore /bin/bash
 ```
 
 You can open another terminal inside this same container using your running container id. 
@@ -42,7 +42,6 @@ echo " " > species_file
 4. Run command_sequence.sh script
 
 ```console
-chmod u+x command_sequence.sh
 ./command_sequence.sh
 ```
 
