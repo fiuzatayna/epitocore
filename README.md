@@ -43,17 +43,17 @@ chmod u+x command_sequence.sh
 
 5. Inspect how many strains your species of interest has and other information with:
 
-How many strains
+###### *Count strains*
 ```console
 ls get_proteome_output/ | wc -l
 ```
 
-How many proteins
+###### *Count proteins*
 ```console
 wc -l tmhmm_output/*
 ```
 
-How many alpha transmembrane domain containing proteins
+###### *Count alpha transmembrane domain containing proteins*
 ```console
 wc -l filtered_tmhmm_output/*
 ```
