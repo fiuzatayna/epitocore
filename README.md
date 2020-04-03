@@ -10,7 +10,7 @@ This repository contains a Docker buildfile (Dockerfile) and folders with script
 
 Clone this repository:
 
-```
+```console
 git clone https://github.com/fiuzatayna/epitocore
 cd epitocore
 docker etc etc copiar comando certinho
@@ -76,10 +76,13 @@ wc -l tmhmm_output/*
 wc -l filtered_tmhmm_output/*
 ```
 
-
-###### *Open another terminal on the same container *
+###### *Open another terminal in the same container*
 ```console
 docker exec -it [CONTAINERID] bash
+```
+###### *Change list of alleles used*
+```console
+nano /files/allele_file
 ```
 
 
