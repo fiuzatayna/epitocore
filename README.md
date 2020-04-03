@@ -20,7 +20,8 @@ docker etc etc copiar comando certinho
 docker etc etc
 ```
 
-You can open another terminal inside this same container using your running container id. Example: docker exec -it 109cff9ce41b bash
+You can open another terminal inside this same container using your running container id. 
+*Example: docker exec -it 109cff9ce41b bash*
 
 2. Open the command_sequence.sh script
 
@@ -41,7 +42,18 @@ chmod u+x command_sequence.sh
 ./command_sequence.sh
 ```
 
-5. Inspect how many strains your species of interest has and other information with:
+The script will run each part of the code once the IEDB immuno prediction is performed, it will prompt:
+
+- [ ] Number of strains
+- [ ] Number of proteins
+- [ ] Number of Alpha Transmembrane Domain Containing Proteins
+
+Then it wil open a configuration_file file used by the R analysis and user will include
+
+- [ ] IEDB consensus percentile rank thresholds
+- [ ] Minimal number of strains in which a candidate peptide must be found.
+
+Inspect how many strains your species of interest has and other information with:
 
 ###### *Count strains*
 ```console
@@ -58,6 +70,7 @@ wc -l tmhmm_output/*
 wc -l filtered_tmhmm_output/*
 ```
 
+<!---
 6. Configure parameters for epitope selection 
 
 ```console
@@ -72,5 +85,5 @@ chmod u+x r_command_sequence.sh
 ```
 
 8. Export results to your host machine
-
+-->
 
