@@ -6,11 +6,15 @@ The EpitoCore program has been added to a Docker container in order to simplify 
 
 This repository contains a Docker buildfile (Dockerfile) and folders with scripts and dependencies. To run this app the user must have admin rights.
 
-To build the app you must clone this repository:
+**To build the container** 
 
+Clone this repository:
+
+```
 git clone https://github.com/fiuzatayna/epitocore
 cd epitocore
 docker etc etc copiar comando certinho
+```
 
 **Running an EpitoCore analysis**
 
@@ -53,6 +57,8 @@ Then it wil open a configuration_file file used by the R analysis and user will 
 - [ ] IEDB consensus percentile rank thresholds
 - [ ] Minimal number of strains in which a candidate peptide must be found.
 
+**Additional**
+
 Inspect how many strains your species of interest has and other information with:
 
 ###### *Count strains*
@@ -69,6 +75,13 @@ wc -l tmhmm_output/*
 ```console
 wc -l filtered_tmhmm_output/*
 ```
+
+
+###### *Open another terminal on the same container *
+```console
+docker exec -it [CONTAINERID] bash
+```
+
 
 <!---
 6. Configure parameters for epitope selection 
