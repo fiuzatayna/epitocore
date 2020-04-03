@@ -46,13 +46,13 @@ chmod u+x command_sequence.sh
 ./command_sequence.sh
 ```
 
-The script will run each part of the code once the IEDB immuno prediction is performed, it will prompt:
+The script will run each part of the code in sections until the IEDB immuno prediction is performed, then it will prompt:
 
 - [ ] Number of strains
 - [ ] Number of proteins
 - [ ] Number of Alpha Transmembrane Domain Containing Proteins
 
-Then it wil open a configuration_file file used by the R analysis and user will include
+Afterwards it will open a configuration_file file used by the R analysis and user must include
 
 - [ ] IEDB consensus percentile rank thresholds
 - [ ] Minimal number of strains in which a candidate peptide must be found.
@@ -76,13 +76,10 @@ wc -l tmhmm_output/*
 wc -l filtered_tmhmm_output/*
 ```
 
-###### *Open another terminal in the same container*
+
+###### *Open another terminal on the same container *
 ```console
 docker exec -it [CONTAINERID] bash
-```
-###### *Change list of alleles used*
-```console
-nano /files/allele_file
 ```
 
 
