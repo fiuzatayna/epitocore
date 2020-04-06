@@ -13,6 +13,15 @@ Clone this repository:
 ```console
 git clone https://github.com/fiuzatayna/epitocore
 cd epitocore
+```
+Extract and enter docker folder:
+
+```console
+tar -xf EpitoCore_docker.tar.xz
+cd EpitoCore
+```
+Build docker container:
+```console
 docker build -t epitocore .
 ```
 
