@@ -64,6 +64,7 @@ Afterwards it will open a configuration_file file used by the R analysis and use
 
 - [ ] IEDB consensus percentile rank thresholds
 - [ ] Minimal number of strains in which a candidate peptide must be found
+- [ ] Name of CMG Biotools clustering file
 
 **Additional**
 
@@ -85,7 +86,7 @@ wc -l filtered_tmhmm_output/*
 ```
 
 
-###### *Open another terminal on the same container *
+###### *Open another terminal on the same container*
 ```console
 docker exec -it [CONTAINERID] bash
 ```
