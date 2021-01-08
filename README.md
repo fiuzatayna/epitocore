@@ -30,7 +30,7 @@ docker build -t epitocore .
 1. Enter the epitocore container:
 
 ```console
-docker run -v Output:/home/Output -it epitocore /bin/bash
+docker run -v -v [local path or $PWD]/Output:/home/Output -it epitocore /bin/bash
 ```
 
 You can open another terminal inside this same container using your running container id. 
